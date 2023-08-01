@@ -1,0 +1,164 @@
+/* Element style */
+
+nav div ul li a{
+    color: white !important;
+}
+
+header div .btn {
+    border-radius: 50px;
+    color: #146FAF;
+    font-size: 1vw;
+    margin: 2% 0;
+    padding: 2% 5%;
+}
+
+footer div div a {
+    color: #2D79B4;
+}
+
+/* Class style */
+.bg-body-tertiary, .bg-content-custom {
+    background-color: #146FAF !important;
+}
+
+.fw-bold {
+    font-size: 4vw;
+}
+
+.black-text {
+    color: black !important;
+}
+
+.active {
+    border-bottom: 1px solid black;
+}
+
+/* .img-background {
+    background: white url(../image/bg-services.jpeg) no-repeat !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+} */
+
+.img-background {
+    overflow: hidden;
+    position: relative;
+    height: 32vw;
+}
+
+.img-background img {
+    opacity: 0.8;
+    position: absolute;
+    top: -20vw;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-body-light {
+    background: linear-gradient(to right bottom, #EAEAEA, #EEEEEE);
+}
+
+.img-section-service div > img{
+    width: 100%;
+}
+
+.details-services {
+    background-color: #EEEEEE;
+    height: 130vw;
+    position: relative;
+    overflow: scroll;
+}
+
+.details-services .result-img {
+    width: 55%;
+}
+
+.quote-content {
+    position: relative;
+    height: 40vw;
+}
+
+.quote-content img {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    z-index: 1;
+}
+
+.text-container {
+    background-color: #FFFFFF;
+    left: 50px;
+    max-height: 600px;
+    overflow: scroll;
+    padding: 1em 4em;
+    position: absolute;
+    top: 7em;
+    width: 50vw;
+    z-index: 2;
+}
+
+.text-container strong {
+    font-size: 2.1vw;
+}
+
+.contact-form .btn-primary {
+    background-color: #146FAF;
+    border-radius: 50px;
+    padding: 0.5em 2em;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 900ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+/* ID style */
+
+#main-welcome, #testimonial-content {
+    margin-top: -10px;
+}
+
+#main-welcome > div {
+    padding: 3% !important;
+}
+
+#testimonial-content .img-person {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.4);;
+}
+
+#testimonial-content {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#testimonial-content .card {
+    background-color: #EAEAEE;
+    border-radius: 0;
+    margin: 0.2em;
+}
+
+#about-content .about-img{
+    padding: 10px;
+    width: 100%;
+}
+
+
+/* Media style */
+@media (min-width: 1020px){
+    #testimonial-content .col-lg-4 {
+        flex: 0 0 auto;
+        width: 30% !important;
+    }
+}
+
+@media (max-width: 767px){
+    #about-content .w-50 {
+        width: 100% !important;
+    }
+}
