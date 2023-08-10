@@ -93,6 +93,7 @@ footer div div a {
     padding: 1em 4em;
     position: absolute;
     top: 7em;
+    left: 8%;
     width: 50vw;
     z-index: 2;
 }
@@ -115,6 +116,33 @@ footer div div a {
 .fade-in.appear {
     opacity: 1;
 }
+
+.video-content {
+    height: 100%;
+    margin: 0 auto;
+    padding: 1.2em;
+    text-align: center;
+}
+
+.video-content video {
+    opacity: 0.97;
+    border-radius: 20px;
+    box-shadow: 10px 15px #16141495;
+    width: 40%;
+    transition: width 2s;
+}
+
+.video-content video:hover {
+    opacity: 1;
+    width: 75%;
+
+}
+
+.video-content video {
+    
+}
+
+
 /* ID style */
 
 #main-welcome, #testimonial-content {
@@ -157,8 +185,28 @@ footer div div a {
     }
 }
 
+@media screen and (max-width: 858px) {
+    .text-container {
+        padding: 1em 1em;
+    }
+
+    .text-container strong {
+        font-size: 1.2vw;
+    }
+
+    .text-container p {
+        font-size: 1.5vw;
+    }
+}
+
 @media (max-width: 767px){
     #about-content .w-50 {
         width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .text-container{
+        top: 65% ;
     }
 }
